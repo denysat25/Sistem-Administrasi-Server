@@ -7,14 +7,14 @@
 ### Objectives
 
 ### Daftar Isi
-[1. Rename Ubuntu_php5.6 Menjadi Ubuntu_landing](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#1-rename-ubuntu_php56-menjadi-ubuntu_landing)<br>
-[2. Install LXC debian 9 dengan nama debian_php5.6](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#2-install-lxc-debian-9-dengan-nama-debian_php56)<br>
+[1. Rename Ubuntu_php5.6 Menjadi Ubuntu_landing](https://github.com/bryanpratama/Sistem-Administrasi-Server/Modul%201#1-rename-ubuntu_php56-menjadi-ubuntu_landing)<br>
+[2. Install LXC debian 9 dengan nama debian_php5.6](https://github.com/bryanpratama/Sistem-Administrasi-Server/Modul%201#2-install-lxc-debian-9-dengan-nama-debian_php56)<br>
 [3. Setup nginx pada dabian_php5.6](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#3-setup-nginx-pada-dabian_php56)<br>
 [4. Setup nginx pada ubuntu_landing](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#4-setup-nginx-pada-ubuntu_landing)<br>
 [5. Auto start pada LXC ubuntu_landing](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#5-auto-start-pada-lxc-ubuntu_landing)<br>
 [6. Setup nginx pada vm.local mengatur proxy_pass](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#6-setup-nginx-pada-vmlocal-mengatur-proxy_pass)<br>
-[7. Tampilan pada browser](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#7-tampilan-pada-browser)<br>
-[8. Analisa](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#8-analisa)<br>
+[7. Tampilan pada browser](https://github.com/bryanpratama/Sistem-Administrasi-Server/Modul%201#7-tampilan-pada-browser)<br>
+[8. Analisa](https://github.com/bryanpratama/Sistem-Administrasi-Server/Modul%201#8-analisa)<br>
 
 #### 1. Rename Ubuntu_php5.6 menjadi Ubuntu_landing
 ubah nama
@@ -83,19 +83,17 @@ butuh pembaruan
 
 ![add lxc_php5.6 to hosts](Assets/menambahkan-lxc_php5.6-ke-hosts.png)
 
-![copy index to lxc_php5_6 index](Assets/mebuat-direktori-lxc_php5.6.png)
+![copy index to lxc_php5_6 index](Assets/cp-index-to-lxc-debian.png)
 
-![test curl ](Assets/menampilkan-isi-debian-lxc_php5.6-dengan-curl.png)
+![test curl ](Assets/isi-lxc-debian.png)
 
 #### 4. Setup nginx pada ubuntu_landing
 
-butuh pembaruan ke index lxc_landing
-
-![change server name to lxc_landing](Assets/mengubah-server-name-yang-sebelumnya-lxc_php5.6-ke-lxc_landing.png)
+![change server name to lxc_landing](Assets/merubah-alamat-jadi-lxc_landing-index.png)
 
 ![add lxc_ladning to sites enabled](Assets/mebuat-lxc_landing-di-sites-enable-ubuntu-landing.png)
 
-![add lxc_landing to hosts](Assets/menambahkan-ip-lxc_landing.png)
+![add lxc_landing to hosts](Assets/menambahkan-lxc_landing-di-host-fix.png)
 
 ![masuk ke lxc_lading index](Assets/masuk-ke-index-pada-lxc-landing.png)
 
@@ -135,9 +133,9 @@ masuk ke vm.local
 
 ![nano vm local](Assets/masuk-ke-vm.local.png)
 
-butuh perbaikan
 
-![merubah isi vm local](Assets/merubah-isi-vm.local.png)
+
+![merubah isi vm local](Assets/update-index-vm-local.png)
 
 #### 7. Tampilan pada browser
 

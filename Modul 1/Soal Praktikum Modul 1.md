@@ -95,12 +95,19 @@ sudo netplan apply
 
 #### 2. Install LXC debian 9 dengan nama debian_php5.6
 
-membuat debian_php5.6
+Jalankan
+```
+sudo lxc-create -n ubuntu_php5.6 -t download -- --dist debian --release stretch --arch amd64 --force-cache --no-validate --server images.linuxcontainers.org
+```
+Command ini digunakan untuk menginstall LXC dengan nama debian_5.6
 
 ![add debian_php5.6](Assets/membuat-debian-5.6.png)
 
-mengecek debian_php5.6
-
+Kemudian cek apakah debian_php5.6 sudah ter-install, dengan command
+```
+sudo lxc-ls -f
+```
+Sehingga akan terlihat tampilan seperti gambar dibawah ini, yang artinya sudah berhasil ter-install 
 ![create debian_php5.6 done](Assets/debian5.6-berhasil-dibuat.png)
 
 #### 3. Setup nginx pada dabian_php5.6
@@ -144,6 +151,8 @@ butuh pembaruan
 ![test curl ](Assets/isi-lxc-debian.png)
 
 #### 4. Setup nginx pada ubuntu_landing
+Masuk ke ubuntu landing dengan command
+
 
 ![change server name to lxc_landing](Assets/merubah-alamat-jadi-lxc_landing-index.png)
 

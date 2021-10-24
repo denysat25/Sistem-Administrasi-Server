@@ -3,7 +3,9 @@
 1. Bryan pratma Putra (1202190037)
 2. Deny Satria Ardi (1202190026)
 
+------
 
+<!--
 ### Objectives
 
 ### Daftar Isi
@@ -15,26 +17,80 @@
 [6. Setup nginx pada vm.local mengatur proxy_pass](https://github.com/bryanpratama/Sistem-Administrasi-Server/new/main/Modul%201#6-setup-nginx-pada-vmlocal-mengatur-proxy_pass)<br>
 [7. Tampilan pada browser](https://github.com/bryanpratama/Sistem-Administrasi-Server/Modul%201#7-tampilan-pada-browser)<br>
 [8. Analisa](https://github.com/bryanpratama/Sistem-Administrasi-Server/Modul%201#8-analisa)<br>
+-->
+
+### Skema
+Virtual Box Ubuntu Server IP : 192.168.0.10
+
+LXC ubuntu server 18.04 php 7.4 : 10.0.3.101
+
+LXC debian server 9 php 5.6 : 10.0.3.102
+
+LXC ubuntu server 16.04 : 10.0.3.101
+
+------
 
 #### 1. Rename Ubuntu_php5.6 menjadi Ubuntu_landing
-ubah nama
+
+Jalankan
+```
+sudo lxc-copy -R -n ubuntu_php5.6 -N ubuntu_landing
+```
+Command ini digunakan untuk merubah nama dari ubuntu_php5.6 ke ubuntu_landing
+
+Kemudian mengecek nama sudah berubah
+```
+sudo lxc-ls -f
+```
 
 ![rename](Assets/rename.png)
 
-ubah ip ke 103
+Start container dari ubuntu_landing
+```
+sudo lxc-start -n ubuntu_landing
+```
+Masuk ke container
+```
+sudo lxc-attach -n ubuntu_landing
+```
+Kemudian merubah IP sesua skema ip address menjadi 10.0.3.103
+```
+nano /etc/network/interfaces
+```
 
 ![ubah ip](Assets/ip-address-sesudah.png)
 
-jika mengalami double ip bisa melakukan reboot
-
+Jika mengalami double ip bisa melakukan reboot
+```
+reboot
+```
 ![eror double ip](Assets/error-double-ip.png)
 
-ubah ip ubuntu_php7.4 ke 101
+Jika sudah bisa keluar dengan command atau crtl + D
+```
+exit
+```
+
+Merubah ip ubuntu_php7.4
+Start container dari ubuntu_php7.4
+```
+sudo lxc-start -n ubuntu_php7.4
+```
+Masuk ke container
+```
+sudo lxc-attach -n ubuntu_php7.4
+```
+Kemudian merubah IP sesua skema ip address menjadi 10.0.3.101
+```
+nano /etc/netplan/10-lxc.yaml
+```
 
 ![ubah ip php_7.4](Assets/ubah-ip-php7.4%20ke-101.png)
 
+Jika sudah silakan apply dengan menggunakan command
+```
 sudo netplan apply
-
+```
 ![confirm ip php_7.4](Assets/periksa-ip-sudah-berubah-ke-101.png)
 
 #### 2. Install LXC debian 9 dengan nama debian_php5.6
@@ -81,7 +137,7 @@ butuh pembaruan
 
 ![](Assets/copy-lxc5.6-ke-enabled.png)
 
-![add lxc_php5.6 to hosts](Assets/menambahkan-lxc_php5.6-ke-hosts.png)
+![add lxc_php5.6 to hosts](Assets/update-hosts-debian5.6.png)
 
 ![copy index to lxc_php5_6 index](Assets/cp-index-to-lxc-debian.png)
 

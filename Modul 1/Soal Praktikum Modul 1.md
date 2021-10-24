@@ -218,22 +218,37 @@ melakukan test dengan curl ke lxc_landing.dev
 
 #### 5. Auto start pada LXC ubuntu_landing
 
-sebelum melakukan auto start stop terlebih dahulu ubuntu landing
-
+Sebelum melakukan auto start, hentikan terlebih dahulu ubuntu landing
+```
+sudo lxc-stop -n ubuntu_landing
+```
 ![stop ubuntu landing](Assets/stop-ubuntu-landing.png)
 
-masuk ke ubuntu landing config
-
+Masuk ke ubuntu landing 
+```
+sudo su
+cd /var/lib/lxc
+cd ubuntu_landing
+```
 ![masuk ke ubuntu landing config](Assets/masuk-ke-ubuntul-landing-config.png)
 
+Kemudian masuk ke config
+```
+nano config
+```
 ![nano config](Assets/masuk-e-config-ubuntul-landing2.png)
 
-menambahkan config dengan lxc.start.auto = 1
-
+menambahkan config  ```lxc.start.auto = 1```
+```
+lxc.start.auto = 1
+```
 ![add auto start](Assets/menambahkan-auto-start-pada-ubuntu-landing.png)
 
-maka auto start = 1
-
+Jika sudah silahkan lakukan ```reboot```
+```
+lxc-ls -f
+```
+maka ubuntu landing akan otomatis menyala dan autostart = 1
 ![reboot for check auto start = 1](Assets/ubuntu-landing-auto.png)
 
 #### 6. Setup nginx pada vm.local mengatur proxy_pass

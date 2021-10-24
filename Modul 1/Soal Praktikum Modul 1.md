@@ -163,7 +163,13 @@ dari browser
 
 ![browser 103](Assets/tampilan-lxc_landing-browser.png)
 
-#### 8. Analisa
+#### 8. Analisis Praktikum
    - Mengapa untuk kebutuhan php5.6 tidak bisa menggunakan ubuntu 16.04, sehingga perlu diganti os ke debian 9?
+     
+     Hal itu karena tidak adanya lagi dukungan oleh support system atau pembaruan perangkat lunak seperti keamanan,repositori, dll dari ubuntu 16.04 untuk php5.6 di pembaharuan terakhir pada april 2021 sehingga perlu berganti menggukankan debian 9 yang  mana akan disupport sampai tahun 2022.<br>
    - Kenapa harus menggunakan virtualisasi LXC pada skema website yang akan didevelop?
+
+     Hal itu karena peggunaan virtualisai LXC(Linux Containers) yang ringan dan efisien dalam penggunaanya sehingga dianggap mudah dalam pengelolaan server, serta memiliki banyak sistem operasi/perintah seperti create, start, dan destroy.<br>
    - Apa yang dimaksud dengan proxy server? kenapa vm.local bisa kita anggap sebagai proxy server?
+
+     proxy server merupakan sebuah sistem yang berfungsi menjadi penghubunng antara komputer untuk mengakses jaringan. Sehingga vm.local dapat dianggap sebagai proxy server karena dalam proses ini vm.local dikonfigurasi agar server yang dibuat dalam virtualisasi os dapat mengakses langsung website yang telah dibuat melalui browser komputer lokal.<br>

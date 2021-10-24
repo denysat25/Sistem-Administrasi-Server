@@ -266,29 +266,45 @@ masuk ke vm.local
 ![merubah isi vm local](Assets/update-index-vm-local.png)
 
 #### 7. Tampilan pada browser
+Test curl melalui kontainer masing-masing
 
-curl didalam
-
+LXC ubuntu server 18.04 ```ubuntu_php7.4```
 ![ip 101](Assets/curl-in-7.4.png)
 
+LXC debian server 9 ```debian_php5.6 ```
 ![ip 102](Assets/curl-in-debian5.6.png)
 
+LXC ubuntu server 16.04 ```ubuntu_landing```
 ![ip 103](Assets/curl-in-landing.png)
 
-curl dari home
+Melakukan curl di home
 
+LXC ubuntu server 18.04 ```ubuntu_php7.4```
 ![home curl 101](Assets/curl-home-in-7.4.png)
 
+LXC debian server 9 ```debian_php5.6 ```
 ![home curl 102](Assets/curl-home-in-debian5.6.png)
 
+LXC ubuntu server 16.04 ```ubuntu_landing```
 ![home curl 103](Assets/curl-home-in-landing.png)
 
-dari browser
+Cek lewat browser
 
+```
+vm.local/blog
+```
 ![browser 101](Assets/tampilan-lxc_7.4-browser.png)
 
+
+```
+vm.local/app
+```
 ![browser 102](Assets/tampilan-debian_5.6-browser.png)
 
+
+```
+vm.local/
+```
 ![browser 103](Assets/tampilan-lxc_landing-browser.png)
 
 #### 8. Analisis Praktikum

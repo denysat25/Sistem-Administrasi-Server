@@ -22,6 +22,6 @@
 ## Table of Contents
 | Task    | Current Status | Finished | 
 |------------------------------|----------------|-----------|
-| [Modul 1](https://github.com/aldonesia/Sistem-Administrasi-Server-2021/tree/master/modul-1) |in progress... | &#9744; [Soal latihan Praktikum]()  <br/> &#9744; [Soal Praktikum]()
+| [Modul 1](https://github.com/aldonesia/Sistem-Administrasi-Server-2021/tree/master/modul-1) |in progress... | &#9744; [Soal Praktikum Modul 1](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/main/Modul%201/Soal%20Praktikum%20Modul%201.md)
 
 

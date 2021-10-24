@@ -199,22 +199,23 @@ nano lxc_php5.6/index.html
 ![isi dari index.html dari debian ](Assets/isi-lxc-debian.png)
 
 #### 4. Setup nginx pada ubuntu_landing
-Masuk ke ubuntu landing dengan command
-
+Masuk ke ubuntu landing, kemudian masuk ke file lxc landing.dev, dengan command
+```
+nano lxc_landing.dev
+```
+setelah itu ketik seperti yang tertera pada gambar
 
 ![change server name to lxc_landing](Assets/merubah-alamat-jadi-lxc_landing-index.png)
 
 ![add lxc_ladning to sites enabled](Assets/mebuat-lxc_landing-di-sites-enable-ubuntu-landing.png)
 
+Setelah itu tambahkan LXC landing pada hosts
 ![add lxc_landing to hosts](Assets/menambahkan-lxc_landing-di-host-fix.png)
 
 ![masuk ke lxc_lading index](Assets/masuk-ke-index-pada-lxc-landing.png)
 
+Kemudian masuk ke halaman index.html untuk memasukkan pesan seperti pada gambar dibawah
 ![melihat isi lxc_landing index](Assets/melihat-isi-dari-lxc-landing-index.png)
-
-melakukan test dengan curl ke lxc_landing.dev
-
-![](Assets/)
 
 #### 5. Auto start pada LXC ubuntu_landing
 
@@ -253,15 +254,19 @@ maka ubuntu landing akan otomatis menyala dan autostart = 1
 
 #### 6. Setup nginx pada vm.local mengatur proxy_pass
 
-masuk ke hosts vm.local
+masuk ke hosts vm.local dengan comand 
+```
+sudo nano /etc/hosts
+```
+sehinngga akan muncul seperti gambar dibawah
 
 ![change to 101 102 103](Assets/merubah-hosts-ke-101-102-103.png)
 
-masuk ke vm.local
+Setelah itu, masuk ke direktori sites-available, lalu masuk ke vm.local
 
 ![nano vm local](Assets/masuk-ke-vm.local.png)
 
-
+sehingga akan masuk ke file vm.local, lalu ketik seperti yang tertera pada gambar
 
 ![merubah isi vm local](Assets/update-index-vm-local.png)
 

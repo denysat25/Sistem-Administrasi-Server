@@ -53,7 +53,7 @@ Masuk ke container
 ```
 sudo lxc-attach -n ubuntu_landing
 ```
-Kemudian merubah IP sesua skema ip address menjadi 10.0.3.103
+Kemudian merubah IP sesuai skema ip address menjadi 10.0.3.103
 ```
 nano /etc/network/interfaces
 ```
@@ -80,7 +80,7 @@ Masuk ke container
 ```
 sudo lxc-attach -n ubuntu_php7.4
 ```
-Kemudian merubah IP sesua skema ip address menjadi 10.0.3.101
+Kemudian merubah IP sesuai skema ip address menjadi 10.0.3.101
 ```
 nano /etc/netplan/10-lxc.yaml
 ```
@@ -104,44 +104,92 @@ mengecek debian_php5.6
 ![create debian_php5.6 done](Assets/debian5.6-berhasil-dibuat.png)
 
 #### 3. Setup nginx pada dabian_php5.6
-
+Start container dari debian_php5.6
+```
+sudo lxc-start -n debian_php5.6
+```
+Masuk ke container
+```
+sudo lxc-attach -n debian_php5.6
+```
+Kemudian install nginx dan nginx extras
+```
+sudo apt install nginx nginx-extras
+```
 start debian_php5.6 dan install nginx
 
 ![start debian + install nginx](Assets/run-debian5.6-dan-install-nginx.png)
 
-install nano, net-tools, dan curl
-
+Kemudian install nano, net-tools, dan curl
+```
+apt install nano net-tools curl
+```
 ![install nano net tools dan curl](Assets/install-net-tools-curl-di-debian.png)
 
-setting ip jadi 102
+Kemudian merubah IP sesuai skema ip address menjadi 10.0.3.102
+```
+nano /etc/network/interfaces
+```
 
 ![change ip to 102](Assets/ubah-isi-dari-network-interface-debian.png)
 
-melakukan restart 
-
+Untuk melihat perubahan silahkan melakukan restart
+```
+restart
+```
 ![restart network service](Assets/mengecek-perubahan-ip-debian-dengan-menggunakan-ifconfig.png)
 
-jika ip tidak berubah silakam melakukan reboot
+jika ip tetap tidak berubah silakam melakukan reboot
+```
+reboot
+```
 
 ![reboot to change ip to 102](Assets/ip-debian-berhasil-di-ubah-menjadi-10.0.3.102%20.png)
 
 setting nginx
-
+```
+cd /etc/nginx/sites-available
+```
+Membuat file baru dengan nama lxc_php5.6.dev
+```
+touch lxc_php5.6.dev
+```
+```
+nano lxc_php5.6.dev
+```
 ![setting nginx](Assets/add-lxc_php5.6-ke-debian.png)
 
-mengiisi lxc_php5.6
+Masuk ke lxc_php5.6.dev dan lakukan konfigurasi seperti dibawah
 
 ![add server name + index](Assets/mengisi-lxc_php5.6.png)
 
-butuh pembaruan
-
+Kemudian masuk ke sites-enabled
+```
+cd ../sites-enabled
+ln -s /etc/nginx/sites-available/lxc_landing.dev .
+```
+Gunakan ```nginx -t``` untuk melakukan koreksi dan ```nginx -s reload ```untuk melakukan reload
+```
+nginx -t
+nginx -s reload
+```
 ![](Assets/copy-lxc5.6-ke-enabled.png)
 
+Lalu masuk ke hosts untuk menambahkan ```lxc_php5.6.dev```
+```
+nano /etc/hosts
+```
 ![add lxc_php5.6 to hosts](Assets/update-hosts-debian5.6.png)
 
 ![copy index to lxc_php5_6 index](Assets/cp-index-to-lxc-debian.png)
 
-![test curl ](Assets/isi-lxc-debian.png)
+Masuk ke direktori html
+```
+cd /var/www/html
+cp index.nginx-debian.html lxc_php5.6/index.html
+nano lxc_php5.6/index.html
+```
+![isi dari index.html dari debian ](Assets/isi-lxc-debian.png)
 
 #### 4. Setup nginx pada ubuntu_landing
 

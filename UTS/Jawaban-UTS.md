@@ -71,7 +71,7 @@
   On top click ```Devices``` > ```Insert Guest Additions CD images```
   
   
-  ![2](Assets/Instalasi-windows-server-2022/insert-guest-additions.png)
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/new-insert-guest-additional.png)
   
   Go to ```Document``` > ```CD Drive``` select application ```VBoxWindowsAdditions```
   

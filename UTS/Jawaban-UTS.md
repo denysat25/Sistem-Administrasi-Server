@@ -11,7 +11,7 @@
 * ## Instalasi Windows Server 2022
   Required :
   + File ISO [Windows Server 2022](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
-  + Snack
+  + Snack :cake: :beers:
   
   Lauch Virtual Box and Click button NEW
   
@@ -52,7 +52,7 @@
   
   ![2](Assets/Instalasi-windows-server-2022/partisi-location.png)
   
-  waiting for installation, it takes 10 - 30 minutes, get out your snack and relax a bit
+  waiting for installation, it takes 10 - 30 minutes, get out your snack and relax a bit :cake: :beers:
   
   ![2](Assets/Instalasi-windows-server-2022/installing-oprating-system.png)
   
@@ -85,7 +85,7 @@
   
   ![2](Assets/Instalasi-windows-server-2022/about-windows.png)
   
-  ### Congratulation !
+  ### Congratulation ! 	:tada:
   <br>
   <br>
   <br>
@@ -142,7 +142,7 @@
   
   ![2](Assets/Instalasi-Active-Directory-Domain-Services/restart.png)
   
-  ### Congratulation !
+  ### Congratulation ! :confetti_ball:
   <br>
   <br>
   <br>
@@ -159,7 +159,7 @@
   After installation done
   ![2](Assets/Instalasi-DNS-server/Untitled.png)
   
-  ### Congratulation !
+  ### Congratulation ! :sparkles:
   <br>
   <br>
   <br>
@@ -182,7 +182,7 @@
   ![2](Assets/Instalasi-Net-Framework-3.5/confirm-installation.png)
   ![2](Assets/Instalasi-Net-Framework-3.5/done.png)
   
-  ### Congratulation !
+  ### Congratulation ! :1st_place_medal:
   <br>
   <br>
   <br>
@@ -192,9 +192,76 @@
   <br>
 ------
 * ## Promote Server to a Domain Controller
+  Enter into Server Manager, click on flag with yellow warning, <br>
+  
+  and you will see a notification ```Post deployment Configuration``` click ```Promote this server to a domain controller```
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/post-deployment.png)
+  
+  In Deployment Configuration select ```Add a new forest``` and Root domain name : ```whatever```.local
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/deployment-configuration.png)
+  
+  In Domain controller options fill in password, confirm, and click next
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/domain-controller-options.png)
+  
+  
+  Ignore warning and click next
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/dns%20option.png)
+  
+  Additional options fill in NetBIOS domain name :```whatever```
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/additional-options.png)
+  
+  Path just click next
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/paths.png)
+  
+  Review Option, next
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/review-options.png)
+  
+  In Prerequisites Check if you see green tick, juct click install
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/prerequisites-check.png)
+  
+  Now restart your VM
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/restart2.png)
+  
+  Login with new client
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/bryanadmin.png)
+  
+  Run CMD and use command sconfig, select ```Network settings```
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/sconfig.png)
+  
+  Select 1
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/network-setting.png)
+  
+  Select 1
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/network-adapter-setting.png)
+  
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/setting-adapter.png)
+  
+  In network Sharing center
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/network-sharing-center.png)
+  
+  Open CMD use command ```netdom query fsmo```
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/cmd-netdom-query-fsmo.png)
+  
+  ![2](Assets/Promote-Server-to-a-Domain-Controller/before.png)
 
 
-  ### Congratulation !
+  ### Congratulation ! :trophy:
   <br>
   <br>
   <br>
@@ -203,8 +270,3 @@
   <br>
   <br>
 ------
-  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)
-  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)
-  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)
-  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)
-  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)

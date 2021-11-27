@@ -4,7 +4,7 @@
 - [Instalasi windows server 2022](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-windows-server-2022)
 - [Instalasi Active Directory Domain Services](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-active-directory-domain-services)
 - [Instalasi DNS server](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#Instalasi-DNS-server)
-- [Instalasi Net Framework 3.5](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#Instalasi-Net-Framework-3.5)
+- [Instalasi Net Framework 3.5](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-net-framework-35)
 - [Promote Server to a Domain Controller](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#Promote-Server-to-a-Domain-Controller)
 ------
 
@@ -107,18 +107,15 @@
   
   ![2](Assets/Instalasi-Active-Directory-Domain-Services/berofe-you-begin.png)
   
-  
   Select installation type ```Role-based or feature-based installation``` click next
   
   ![2](Assets/Instalasi-Active-Directory-Domain-Services/select-install-type.png)
-  
   
   Select destination server
   Choose ```Select a server from the server pool```
   Server Pool select your pc names
   
   ![2](Assets/Instalasi-Active-Directory-Domain-Services/select-destination.png)
-  
   
   if you are not sure, you can chek at your Device Sprecifications
   
@@ -156,6 +153,14 @@
 ------
 * ## Instalasi DNS server
 
+  do the same thing as when [Instalasi Active Directory Domain Services](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-active-directory-domain-services)
+  but now in ```Select features``` tick ```Net Framework 3.5 Features```
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/features.png)
+  
+  After installation done
+  ![2](Assets/Instalasi-DNS-server/Untitled.png)
+  
   ### Congratulation !
   <br>
   <br>
@@ -168,6 +173,16 @@
 * ## Instalasi Net Framework 3.5
 
 
+  do the same thing as when [Instalasi Active Directory Domain Services](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-active-directory-domain-services)
+  
+  but now in ```Select features``` tick ```Net Framework 3.5 Features```
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/features.png)
+  
+  After installation done
+  
+  ![2](Assets/Instalasi-DNS-server/Untitled.png)
+  
   ### Congratulation !
   <br>
   <br>

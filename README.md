@@ -27,4 +27,4 @@
 
 | Special Task    | Current Status | Finished | 
 |------------------------------|----------------|-----------|
-| [UTS](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/main/Assets/SOAL%20UTS-1.png) |in progress... | &#9744; [UTS](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/main/UTS/Jawaban-UTS.md)
+| [UTS](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/main/Assets/SOAL%20UTS-1.png) |completed | &#9745; [UTS](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/main/UTS/Jawaban-UTS.md)

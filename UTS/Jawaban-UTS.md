@@ -154,9 +154,7 @@
 * ## Instalasi DNS server
 
   do the same thing as when [Instalasi Active Directory Domain Services](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-active-directory-domain-services)
-  but now in ```Select features``` tick ```Net Framework 3.5 Features```
-  
-  ![2](Assets/Instalasi-Active-Directory-Domain-Services/features.png)
+  but now in ```Select server roles``` tick ```DNS Server```
   
   After installation done
   ![2](Assets/Instalasi-DNS-server/Untitled.png)
@@ -177,11 +175,12 @@
   
   but now in ```Select features``` tick ```Net Framework 3.5 Features```
   
-  ![2](Assets/Instalasi-Active-Directory-Domain-Services/features.png)
+  ![2](Assets/Instalasi-Net-Framework-3.5/untitled.png)
   
-  After installation done
+  Confirm installation selection, just click install
   
-  ![2](Assets/Instalasi-DNS-server/Untitled.png)
+  ![2](Assets/Instalasi-Net-Framework-3.5/confirm-installation.png)
+  ![2](Assets/Instalasi-Net-Framework-3.5/done.png)
   
   ### Congratulation !
   <br>

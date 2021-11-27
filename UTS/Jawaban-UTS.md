@@ -3,12 +3,12 @@
 ### Objectives
 - [Instalasi windows server 2022](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-windows-server-2022)
 - [Instalasi Active Directory Domain Services](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-active-directory-domain-services)
-- Instalasi DNS server
-- Instalasi Net Framework 3.5
-- Promote Server to a Domain Controller
+- [Instalasi DNS server](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#Instalasi-DNS-server)
+- [Instalasi Net Framework 3.5](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#Instalasi-Net-Framework-3.5)
+- [Promote Server to a Domain Controller](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#Promote-Server-to-a-Domain-Controller)
 ------
 
-* ### Instalasi Windows Server 2022
+* ## Instalasi Windows Server 2022
   Required :
   + File ISO [Windows Server 2022](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
   + Snack
@@ -85,7 +85,112 @@
   
   ![2](Assets/Instalasi-windows-server-2022/about-windows.png)
   
+  ### Congratulation !
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+------
 * ## Instalasi Active Directory Domain Services
+  Enter into Server Manager, if you not see anything aftar login windows clik widows button and you can see Server Manager
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/open-server-manager.png)
+  
+  In dasboard click ```Add roles and features```
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/add-roles-andreatures.png)
+  
+  In ```Before you begin``` just clik next
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/berofe-you-begin.png)
+  
+  
+  Select installation type ```Role-based or feature-based installation``` click next
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/select-install-type.png)
+  
+  
+  Select destination server
+  Choose ```Select a server from the server pool```
+  Server Pool select your pc names
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/select-destination.png)
+  
+  
+  if you are not sure, you can chek at your Device Sprecifications
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/check-pc-name.png)
+  
+  Next is Select server roles, tick ```Active Directory Domain Services```click next
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/server-roles.png)
+  
+  In Select features just click next
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/features.png)
+  
+  Active Directory Domain Services just click next
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/ad-as.png)
+  
+  
+  Ignore warning, and Install
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/click-install.png)
+  
+  You need restart your VM 
+  
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/restart.png)
+  
+  ### Congratulation !
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+------
+* ## Instalasi DNS server
 
-coming soon...
+  ### Congratulation !
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+------
+* ## Instalasi Net Framework 3.5
 
+
+  ### Congratulation !
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+------
+* ## Promote Server to a Domain Controller
+
+
+  ### Congratulation !
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+------
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)
+  ![2](Assets/Instalasi-Active-Directory-Domain-Services/.png)

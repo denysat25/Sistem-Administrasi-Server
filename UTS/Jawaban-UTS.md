@@ -1,8 +1,8 @@
-# UTS
+# UTS System Administrasi Server
 
 ### Objectives
-- Instalasi windows server 2022
-- Instalasi Active Directory Domain Services
+- [Instalasi windows server 2022](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-windows-server-2022)
+- [Instalasi Active Directory Domain Services](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/Progress-UTS2/UTS/Jawaban-UTS.md#instalasi-active-directory-domain-services)
 - Instalasi DNS server
 - Instalasi Net Framework 3.5
 - Promote Server to a Domain Controller

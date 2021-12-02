@@ -1,35 +1,43 @@
-# Laporan Soal Praktikum Modul 2
+# Laporan Praktikum Modul 2
 
 1. Bryan pratma Putra (1202190037)
 2. Deny Satria Ardi (1202190026)
 
 ------
 
+## 1. Rubah LXC landing dengan ubuntu focal (destroy n create, same ip, same name)
+
 cek-lxc
+``` 
+lxc-ls -f
+```
 
 ![](Assets/1/cek-lxc.png)
 
-destroy-ubuntu-landing
+Menganti ubuntu landing, dan buat ubuntu vocal baru
+``` 
+lxc-destroy ubuntu_landing
+```
 
 ![](Assets/1/destroy-ubuntu-landing.png)
 
-create-ubuntu-landing
+Create-ubuntu-landing
 
 ![](Assets/1/create-ubuntu-landing.png)
 
-apt-install-nano
+Install nano
 
 ![](Assets/1/apt-install-nano.png)
 
-edit-lxc-yaml
+Atur IP ubuntu_landing
 
 ![](Assets/1/edit-lxc-yaml.png)
 
-ip-r
+melihat perubahan dengan menggunakan ```ip r```
 
 ![](Assets/1/ip-r.png)
 
-auto-start-ubuntu-landing
+Buat ubuntu_landing jadi auto start dengan ```lxc.start.auto = 1``` pada config
 
 ![](Assets/1/auto-start-ubuntu-landing.png)
 
@@ -37,11 +45,18 @@ install-ssh-server
 
 ![](Assets/1/install-ssh-server.png)
 
-sshd-config
+masuk ke ```/etc/ssh/sshd_config``` dan tambahkan code dibawah ini :
+
+```
+PermitRootLogin yes
+RSAAuthentication yes
+```
+
+dan lakukan ```service sshd restart```
 
 ![](Assets/1/sshd-config.png)
 
-set-new-pass-dan-cek-ssh
+mengatur sandi baru dengan ```passwd``` dan cek ssh 
 
 ![](Assets/1/set-new-pass-dan-cek-ssh.png)
 
@@ -49,7 +64,7 @@ set-new-pass-dan-cek-ssh
 
 ![](Assets/1/.png)
 
-2. 
+## 2. Rubah LXC php7 dengan ubuntu focal (destroy n create, same ip, same name)
 
 Cek lxc dengan menggunakan 
 
@@ -94,4 +109,5 @@ Cek ssh apakah sudah berjalan atau belum
 
 ![](Assets/No%202/010.png)
 
-coming soon...
+## 3. vm.local/
+## 4. vm.local/blog

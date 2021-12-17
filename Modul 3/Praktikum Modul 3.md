@@ -105,7 +105,7 @@ buka dan edit vm.local di `` nano/etc/nginx/sites-enabled/vm.local`` menjadi sep
 
 Buka and edit `` nano/etc/bind/vm/vm.local`` menjadi seperti pada gambar
 
-![](Assets/tambah ssan penulisan dev)
+![](Assets/add-www-etc-bind-vm.local)
 
 ![](Assets/check-service-bind9-status.png)
 

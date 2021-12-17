@@ -10,7 +10,7 @@
 
 Masuk ke file ansible laravel, lalu buat file sublaravel
 
-![](Assets/1/cek-lxc.png)
+![](Assets/create-sublaravel.png)
 
 isi dile sublaravel, seperti berikut 
 ```
@@ -24,12 +24,13 @@ isi dile sublaravel, seperti berikut
          - bind9
          - dnsutil
 ```
+![](Assets/isi-sublaravel.png)
 
 Install packages dengan  ``ansible-playbook -i host sublaravel.yml -k``
 
-![](Assets/1/cek-lxc.png)
+![](Assets/instal-sublaravel.png)
 
-Buat file config.yml, sebagai berikut
+Buat file confi.yml, sebagai berikut
 
 ```
 ---
@@ -84,27 +85,29 @@ Buat file config.yml, sebagai berikut
 
 ```
      
-![](Assets/1/cek-lxc.png)
+![](Assets/create-confi.png)
 
-Kemudian install dengan perintah ``ansible-playbook -i host config.yml -k``
+Kemudian install dengan perintah ``ansible-playbook -i host confi.yml -k``
 
-![](Assets/1/cek-lxc.png)
+![](Assets/instal-confi-done.png)
 
 Tambahkan subdomain di /etc/hosts
 
-![](Assets/1/cek-lxc.png)
+![](Assets/add-subdomain.png)
 
 Masuk ke ssh root ubuntu landing, kemudian tambahkan ``www`` di vm.local ubuntu_landing
 
-![](Assets/1/cek-lxc.png)
+![](Assets/add-www-lxc-landing.png)
 
 buka dan edit vm.local di `` nano/etc/nginx/sites-enabled/vm.local`` menjadi seperti pada gambar
 
-![](Assets/1/cek-lxc.png)
+![](Assets/add-dev.vm.local.png)
 
 Buka and edit `` nano/etc/bind/vm/vm.local`` menjadi seperti pada gambar
 
-![](Assets/1/cek-lxc.png)
+![](Assets/tambah ssan penulisan dev)
+
+![](Assets/check-service-bind9-status.png)
 
 Restart
 
@@ -113,13 +116,16 @@ service bind9 restart
 service nginx restart
 /etc/init.d/named restart
 ```
+![](Assets/restart-pack.png)
+
 Buka pengaturan wi-fi. masuk ke menu IPv4, kemudian ubah dns pc menjadi ip vm
 
-![](Assets/1/cek-lxc.png)
+![](Assets/setting-ipv4.png)
 
 Setelah itu sambungkan lagi dengan wi-fi dan akses dev.vm.local
 
-![](Assets/1/cek-lxc.png)
-![](Assets/1/cek-lxc.png)
+![](Assets/test-dev.vm.local.png)
+
+![](Assets/test-dev.vm.local.blog.png)
 
      

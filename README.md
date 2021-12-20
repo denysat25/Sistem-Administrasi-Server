@@ -24,6 +24,7 @@
 |------------------------------|----------------|-----------|
 | [Modul 1](https://github.com/aldonesia/Sistem-Administrasi-Server-2021/tree/master/modul-1) | completed | &#9745; [Praktikum Modul 1](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/main/Modul%201/Soal%20Praktikum%20Modul%201.md)
 | [Modul 2](https://github.com/aldonesia/Sistem-Administrasi-Server-2021/tree/master/modul-2) |in progress... | &#9744; [Praktikum Modul 2](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/main/Modul%202/Soal%20Praktikum%20Modul%202.md)
+| [Modul 3](https://github.com/aldonesia/Sistem-Administrasi-Server-2021/tree/master/modul-3) |in progress... | &#9744; [Praktikum Modul 3](https://github.com/bryanpratama/Sistem-Administrasi-Server/blob/main/Modul%203/Praktikum%20Modul%203.md)
 
 | Special Task    | Current Status | Finished | 
 |------------------------------|----------------|-----------|

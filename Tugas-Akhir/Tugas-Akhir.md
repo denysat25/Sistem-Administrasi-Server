@@ -27,14 +27,12 @@
   isi coding install ssh server dan cara set ip di php 5 & 7
   ```
   
-* Create directory folder ansible, then setting host as shown in the screenshot below.
+* Create directory folder ansible
 
   ```
   mkdir -p ~/ansible/tubes
   ```
   ![](asset/007.png)
-  
-  ![](asset/008.png)
   
 * Create a roles directory to include scripts to be installed
   ```
@@ -830,6 +828,7 @@
     sudo mkdir -p db/handlers
     sudo mkdir -p db/templates
     ```
+    ![](asset/013.png)
     - Make file main.yml in the tasks, and include script like in the below
       ```
       ---
@@ -1056,7 +1055,8 @@
     sudo mkdir -p pma/handlers
     sudo mkdir -p pma/templates
     ```
-
+   ![](asset/014.png)
+   
  - At the tasks, make file main.yml and include script like in the below
    ```
     ---
@@ -1219,6 +1219,7 @@
   sudo mkdir -p wordpress /handlers
   sudo mkdir -p wordpress /templates
   ```
+   ![](asset/015.png)
   
   - At tasks make file main.yml and include script like in the below
     ```
@@ -1326,6 +1327,7 @@
     nano wordpress.conf
     nano wp.conf
     ```
+    
     1.  php7.conf
          ```
          ; Start a new pool named 'www'.
@@ -1853,6 +1855,7 @@
       sudo mkdir -p yii /handlers
       sudo mkdir -p yii /templates
       ```
+       ![](asset/016.png)
       
     - At tasks make file main.yml and include script like in the below
       ```
@@ -2015,6 +2018,7 @@
     [database]
     LXC_DB_SERVER ansible_host=lxc_db_server.dev ansible_ssh_user=root ansible_become_pass=it0201
     ```
+     ![](asset/017.png)
     
   - Make file install-codeigniter.yml `nano install-codeigniter.yml`, and include script like in the below 
     ```
@@ -2146,6 +2150,8 @@
       roles:
         - wordpress
     ```
+     ![](asset/018.png)
+     ![](asset/019.png)
     
   - Make file install-yii.yml `nano install-yii.yml`, and include script like in the below 
     ```
@@ -2204,6 +2210,8 @@
         - php
         - yii
     ```
+     ![](asset/020.png)
+     ![](asset/021.png)
     
 * to configure nginx, open `cd /etc/nginx/sites-available`.   Create a file with names kelompok1.fpsas, then enter `nanogroup3.fpsas`, and include script like in the below 
     ```

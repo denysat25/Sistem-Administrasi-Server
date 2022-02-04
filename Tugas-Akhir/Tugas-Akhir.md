@@ -24,7 +24,15 @@
 * Set static IP address and install ssh server in all the lxc
 
   ```
-  isi coding install ssh server dan cara set ip di php 5 & 7
+  sudo nano /etc/netplan/10-lxc.yaml  /  nano /etc/network/interfaces
+  sudo netplan apply
+  
+  apt install openssh-server
+  cd /etc/ssh
+  nano sshd_config
+  sudo service sshd restart
+  passwd
+
   ```
   
 * Create directory folder ansible
@@ -158,14 +166,14 @@
          APP_ENV=local
          APP_KEY=
          APP_DEBUG=true
-         APP_URL=http://kelompok3.fpsas
+         APP_URL=http://kelompok1.fpsas
 
          LOG_CHANNEL=stack
          LOG_DEPRECATIONS_CHANNEL=null
          LOG_LEVEL=debug
 
          DB_CONNECTION=mysql
-         DB_HOST=10.0.3.131
+         DB_HOST=10.0.3.250
          DB_PORT=3306
          DB_DATABASE=landing
          DB_USERNAME=admin
@@ -1771,18 +1779,18 @@
         * @package WordPress
         */
 
-       define( 'WP_HOME', 'http://news.kelompok3.fpsas' );
-       define( 'WP_SITEURL', 'http://news.kelompok3.fpsas' );
+       define( 'WP_HOME', 'http://news.kelompok1.fpsas' );
+       define( 'WP_SITEURL', 'http://news.kelompok1.fpsas' );
 
        // ** MySQL settings - You can get this info from your web host ** //
        /** The name of the database for WordPress */
        define( 'DB_NAME', 'blog' );
 
        /** MySQL database username */
-       define( 'DB_USER', 'arafah' );
+       define( 'DB_USER', 'kelompok' );
 
        /** MySQL database password */
-       define( 'DB_PASSWORD', '1234' );
+       define( 'DB_PASSWORD', 'it0201' );
 
        /** MySQL hostname */
        define( 'DB_HOST', '10.0.3.100:3306' );
